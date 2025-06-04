@@ -15,7 +15,9 @@
 #'
 #' @importFrom openxlsx read.xlsx
 #' @importFrom graphics barplot
+#' @importFrom grDevices rgb
 #' @importFrom dplyr filter group_by top_n
+#' @importFrom utils packageVersion head
 #'
 #' @author Aleksandr Ianevski, with edits from Federico Marini
 #'

@@ -9,6 +9,7 @@
 #'
 #' @importFrom openxlsx read.xlsx
 #' @importFrom HGNChelper checkGeneSymbols
+#' @importFrom stats na.omit
 #'
 #' @export
 #'

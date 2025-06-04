@@ -50,11 +50,12 @@ sctype_source <- function(){
 #' @export
 #'
 #' @importFrom Seurat DimPlot
+#' @importFrom methods slot
 #'
 #' @author Aleksandr Ianevski, with edits from Federico Marini
 #'
 #' @examples
-#' seurat_object <- run_scType(seurat_object,"Immune system")
+#' # seurat_object <- run_scType(seurat_object, "Immune system")
 #'
 #'
 run_sctype <- function(seurat_object, known_tissue_type = NULL, assay = "RNA",

@@ -18,6 +18,10 @@ Imports:
     Seurat,
     dplyr,
     scales,
+    utils,
+    grDevices,
+    stats,
+    methods,
     graphics
 Suggests: 
     ggraph,
