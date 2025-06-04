@@ -23,7 +23,7 @@ sctype_source <- function(){
     # load cell type annotation function
     source("https://raw.githubusercontent.com/IanevskiAleksandr/sc-type/master/R/sctype_score_.R")
     # load ScType database
-    db_ = "https://raw.githubusercontent.com/IanevskiAleksandr/sc-type/master/ScTypeDB_full.xlsx"
+    db_ <- system.file("extdata", "ScTypeDB_full.xlsx", package = "sctype")
     return(db_)
 }
 
