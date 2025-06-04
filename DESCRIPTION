@@ -20,6 +20,7 @@ Imports:
     Seurat,
     dplyr,
     scales,
+    rlang,
     utils,
     grDevices,
     stats,
