@@ -1,0 +1,29 @@
+Package: sctype
+Title: sc-type, but as a real package
+Version: 0.1.0
+Authors@R: 
+    c(
+        person("Federico", "Marini", email = "marinif@uni-mainz.de", role = c("aut", "cre")),
+        person("Aleksandr", "Ianevski", role = "aut")
+    )
+Description: sc-type, but as a real package. Simple as that. With the least 
+    (necessary) edits.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    openxlsx,
+    HGNChelper,
+    Seurat,
+    dplyr,
+    scales,
+    graphics
+Suggests: 
+    ggraph,
+    ggplot2,
+    knitr,
+    BiocStyle,
+    rmarkdown
+VignetteBuilder: knitr
+biocViews: Software, GeneExpression, Transcription, Transcriptomics
