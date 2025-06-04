@@ -18,6 +18,7 @@
 #' @importFrom grDevices rgb
 #' @importFrom dplyr filter group_by top_n
 #' @importFrom utils packageVersion head
+#' @importFrom rlang .data
 #'
 #' @author Aleksandr Ianevski, with edits from Federico Marini
 #'
@@ -51,7 +52,7 @@ auto_detect_tissue_type <- function(path_to_db_file, seuratObject, scaled, assay
             head(data.frame(cluster = cl, type = names(es.max.cl), scores = es.max.cl), 10)
         }))
 
-        dt_out = cL_resutls |> group_by(cluster) |> top_n(n = 1)
+        dt_out = cL_resutls |> group_by(.data$cluster) |> top_n(n = 1)
 
         # return mean score for tissue
         result_ = rbind(result_, data.frame(tissue = tissue, score = mean(dt_out$scores)))
