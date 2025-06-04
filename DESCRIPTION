@@ -28,7 +28,10 @@ Imports:
     graphics
 Suggests: 
     ggraph,
+    igraph,
     ggplot2,
+    tidyverse,
+    data.tree,
     knitr,
     BiocStyle,
     rmarkdown
