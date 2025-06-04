@@ -42,7 +42,7 @@ This function is compatible with seurat versions 4 and 5 --
 different methods(@,$) to retrieve counts,data,scale.data
 }
 \examples{
-seurat_object <- run_scType(seurat_object,"Immune system")
+# seurat_object <- run_scType(seurat_object, "Immune system")
 
 
 }
